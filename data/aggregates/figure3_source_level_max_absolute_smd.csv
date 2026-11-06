@@ -1,0 +1,6 @@
+source,n,max_abs_SMD_before,max_abs_SMD_after
+Municipal piped,1275,0.10740198,0.01062516
+Groundwater,1212,0.11693133,0.01430716
+Surface water,234,0.16863009,0.15649369
+Tanker delivery,120,0.20660413,0.18846583
+Commercial water,225,0.27832483,0.06418441

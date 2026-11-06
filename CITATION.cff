@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite Mohanavelu and Osman, Household Water Service Quality Standardization: Research Code and Aggregate Results (2026). The manuscript reference and repository DOI will be added once issued."
+title: "Household Water Service Quality Standardization: Research Code and Aggregate Results"
+type: software
+authors:
+  - family-names: Mohanavelu
+    given-names: Aadhityaa
+  - family-names: Osman
+    given-names: Khalid K.
+version: 1.0.0
+abstract: "Analysis programs, aggregate results and verification tools for comparisons of household water-service quality across drinking-water provision arrangements."
+keywords:
+  - household water service quality
+  - common-reference standardization
+  - augmented inverse-probability weighting
+  - reproducibility

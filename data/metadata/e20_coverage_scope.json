@@ -1,0 +1,24 @@
+{
+  "absolute_max_error_coverage_percent": {
+    "alternative": 95.8,
+    "null": 95.0
+  },
+  "alternative_replications": 120,
+  "analysis_stage": "E20",
+  "comparison": "PIPED_TANKER",
+  "interpretation": "Oracle-nuisance synthetic experiment; not an empirical fitted-nuisance coverage guarantee.",
+  "multiplier_draws": 1000,
+  "null_replications": 240,
+  "participants_per_replication": 3066,
+  "reference_program": "code/original/E20/simulate_holdout.py",
+  "source_threshold_grid_count": 41,
+  "studentized_coverage_percent": {
+    "alternative": 42.5,
+    "null": 57.9
+  },
+  "table": "data/aggregates/synthetic_simulation_coverage_summary.csv",
+  "threshold_count": 39,
+  "threshold_family": "FULL_INTERIOR_39",
+  "threshold_max_wsqs": 97.5,
+  "threshold_min_wsqs": 2.5
+}

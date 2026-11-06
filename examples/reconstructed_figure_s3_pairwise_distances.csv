@@ -1,0 +1,11 @@
+source_1,source_2,integrated_absolute_CDF_distance_WSQS_points,calculation_scope
+Municipal piped,Groundwater,0.933980000,trapezoid on released rounded CDF grid
+Municipal piped,Surface water,1.705907500,trapezoid on released rounded CDF grid
+Municipal piped,Tanker delivery,3.953770000,trapezoid on released rounded CDF grid
+Municipal piped,Commercial water,3.173332500,trapezoid on released rounded CDF grid
+Groundwater,Surface water,0.920652500,trapezoid on released rounded CDF grid
+Groundwater,Tanker delivery,4.620015000,trapezoid on released rounded CDF grid
+Groundwater,Commercial water,3.776737500,trapezoid on released rounded CDF grid
+Surface water,Tanker delivery,5.123012500,trapezoid on released rounded CDF grid
+Surface water,Commercial water,4.637390000,trapezoid on released rounded CDF grid
+Tanker delivery,Commercial water,4.019102500,trapezoid on released rounded CDF grid

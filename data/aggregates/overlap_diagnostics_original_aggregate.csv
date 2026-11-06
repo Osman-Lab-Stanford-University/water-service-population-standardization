@@ -1,0 +1,6 @@
+source,n,ess,ess_fraction,largest_normalized_weight_share,max_weighted_category_prop_gap_pp,p01_target,E04_screen_pass
+PIPED,1275,1219.965,0.9568,0.0024,0.3942,0.2247,True
+GROUNDWATER,1212,1151.670,0.9502,0.0018,0.5600,0.2147,True
+SURFACE,234,199.747,0.8536,0.0151,2.723,0.0261,True
+TANKER,120,90.070,0.7506,0.0276,4.996,0.0108,True
+COMMERCIAL,225,187.198,0.8320,0.0119,2.682,0.0285,True

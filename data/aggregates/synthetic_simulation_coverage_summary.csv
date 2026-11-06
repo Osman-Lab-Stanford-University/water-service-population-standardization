@@ -1,0 +1,5 @@
+simulation_source,scenario,method,full_grid_coverage_percent,nominal_percent
+E20 independent discrete-WSQS synthetic DGP,Synthetic null,Studentized max statistic,57.900,95.000
+E20 independent discrete-WSQS synthetic DGP,Synthetic null,Unstudentized absolute max error,95.000,95.000
+E20 independent discrete-WSQS synthetic DGP,Synthetic alternative,Studentized max statistic,42.500,95.000
+E20 independent discrete-WSQS synthetic DGP,Synthetic alternative,Unstudentized absolute max error,95.800,95.000

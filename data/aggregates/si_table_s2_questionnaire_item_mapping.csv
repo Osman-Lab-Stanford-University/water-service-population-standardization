@@ -1,0 +1,9 @@
+QID,Measure,English questionnaire wording,Response options
+Q1.1,Primary domestic-water source,"What is your primary source of domestic water (this includes all water you may use – including drinking, washing, and gardening) you consume in your household?","Water from Municipality/Corporation; Groundwater; Lake/Pond; Buy water from trucks; Buy water from stores (e.g., canned water); Other sources"
+Q1.3,Primary drinking-water source,What is your primary source of the drinking water you consume in your household?,"Water from Municipality/Corporation; Groundwater; Lake/Pond; Buy water from trucks; Buy water from stores (e.g., canned water); Other sources"
+Q15.17,Family income,What is your family's approximate annual income?,"Under Rs. 100,000; Rs. 1,00,000 to Rs. 2,50,000; Rs. 2,50,000 to Rs. 5,00,000; Rs. 5,00,000 to Rs. 10,00,000; Rs. 10,00,000 and more"
+Q15.13,Number of cars,How many cars does your household have?,1; 2; None
+Q15.15,Housing tenure,What is the ownership status of your house?,Owned by you or someone in this household with a mortgage or loan; Owned by you or someone in this household free and clear (without a loan); Rented; Other
+Q15.14,Dwelling type,How would you describe your dwelling type?,Individual house; Apartment; Temporary housing; Other
+Q15.10,Household size,How many people live in your household?,1; 2; 3; 4; 5; 6; 7; 8 or more
+Q15.5,Childhood settlement setting,How would you classify the area/neighbourhood you grew up in?,Urban; Sub-urban; Rural

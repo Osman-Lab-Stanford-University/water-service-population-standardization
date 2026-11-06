@@ -1,0 +1,5 @@
+Contrast,Estimate,Marginal 95% interval,Four-contrast simultaneous 95% interval
+Mean WSQS (points),−0.602,"[−1.894, 0.691]","[−2.199, 0.996]"
+WSQS ≤50 (pp),−0.296,"[−2.483, 1.892]","[−2.999, 2.408]"
+WSQS ≤60 (pp),+0.995,"[−2.254, 4.245]","[−3.022, 5.012]"
+WSQS ≤70 (pp),+3.765,"[−0.191, 7.720]","[−1.124, 8.654]"
