@@ -1,0 +1,146 @@
+{
+  "release": "1.1.0",
+  "source": "User-supplied, successful E28 empirical-run aggregate terminal report (7 November 2026); no microdata or predictions transferred",
+  "sample_size": 3066,
+  "group_counts": {
+    "PIPED": 1275,
+    "GROUNDWATER": 1212,
+    "SURFACE": 234,
+    "TANKER": 120,
+    "COMMERCIAL": 225
+  },
+  "primary_source_question": "Q1.3",
+  "outcome": "WSQS CORE-8, 0 to 100",
+  "standardization": "uncapped cross-fitted AIPW",
+  "outcome_models": [
+    "HGBR",
+    "Random Forest",
+    "Ridge",
+    "CV-selected HGBR"
+  ],
+  "covariate_questions": [
+    "Q15.17",
+    "Q15.13",
+    "Q15.15",
+    "Q15.14",
+    "Q15.10",
+    "Q15.5"
+  ],
+  "encoded_indicator_count": 33,
+  "outer_cross_folds": 5,
+  "outer_stratified_by_source": true,
+  "outer_seed": 20261022,
+  "propensity_model": {
+    "type": "multinomial L2 logistic regression",
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 2000,
+    "tol": 1e-06
+  },
+  "hgbr_original": {
+    "loss": "squared_error",
+    "learning_rate": 0.05,
+    "max_iter": 200,
+    "max_leaf_nodes": 7,
+    "max_depth": 3,
+    "min_samples_leaf": 10,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 20261022
+  },
+  "random_forest": {
+    "n_estimators": 500,
+    "criterion": "squared_error",
+    "bootstrap": true,
+    "max_features": 1.0,
+    "max_depth": null,
+    "min_samples_leaf": 10,
+    "random_state": 20261022,
+    "n_jobs": 1
+  },
+  "ridge": {
+    "alpha": 10.0,
+    "fit_intercept": true,
+    "solver": "svd",
+    "predictions_clipped": [
+      0,
+      100
+    ]
+  },
+  "hgbr_tuning": {
+    "selection_per_source_and_outer_fold": true,
+    "inner_folds": 3,
+    "selection_metric": "RMSE on inner validation records",
+    "selected_in_25_of_25": "conservative",
+    "grid": [
+      {
+        "name": "original",
+        "learning_rate": 0.05,
+        "max_iter": 200,
+        "max_leaf_nodes": 7,
+        "max_depth": 3,
+        "min_samples_leaf": 10,
+        "l2_regularization": 1.0
+      },
+      {
+        "name": "conservative",
+        "learning_rate": 0.05,
+        "max_iter": 150,
+        "max_leaf_nodes": 5,
+        "max_depth": 3,
+        "min_samples_leaf": 15,
+        "l2_regularization": 5.0
+      },
+      {
+        "name": "flexible",
+        "learning_rate": 0.05,
+        "max_iter": 300,
+        "max_leaf_nodes": 15,
+        "max_depth": 4,
+        "min_samples_leaf": 10,
+        "l2_regularization": 0.5
+      },
+      {
+        "name": "slow_growth",
+        "learning_rate": 0.03,
+        "max_iter": 400,
+        "max_leaf_nodes": 7,
+        "max_depth": 3,
+        "min_samples_leaf": 10,
+        "l2_regularization": 1.0
+      }
+    ],
+    "all_candidates": {
+      "loss": "squared_error",
+      "early_stopping": false,
+      "random_state": 20261022
+    }
+  },
+  "paired_rmse_bootstrap": {
+    "resamples": 2000,
+    "paired": true,
+    "stratified_within_original_source": true,
+    "models_refitted_per_resample": false,
+    "interval": "2.5th and 97.5th percentile conditional on fitted OOF predictions"
+  },
+  "working_if_se": {
+    "method": "standard deviation of centered empirical AIPW scores / sqrt(n)",
+    "contrast": "per-record paired score difference",
+    "not": "probability-sampling or recruitment-cluster inference"
+  },
+  "validation": {
+    "E28_original_E02_group_metrics": "30 of 30 exactly reproduced at numerical display precision",
+    "E28_original_E02_OOF_logloss": "1.248836308877745",
+    "E28_original_E04_saved_aggregate_comparisons": "20 of 20 exactly reproduced at numerical display precision",
+    "E28_previous_E27_aggregate_comparisons": "60 accepted; maximum discrepancy 0.000267037 WSQS",
+    "E27_prior_replay_note": "An earlier separate E27 run used near-equivalence for E02; E28 restored exact E02/E04 numerical agreement."
+  },
+  "empirical_environment": {
+    "python": "3.11.5",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.7.2"
+  },
+  "restricted_dependency_warning": "Respondent-level survey data, scoring crosswalk, survey decoder, and original stage reports required for full empirical refitting; none included."
+}

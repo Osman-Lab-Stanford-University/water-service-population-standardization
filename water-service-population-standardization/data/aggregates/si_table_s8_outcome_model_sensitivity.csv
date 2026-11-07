@@ -1,0 +1,9 @@
+Metric,n,HGBR_original,Random_Forest,Ridge,CV_selected_HGBR,Unit
+Municipal piped,1275,74.847,74.854,74.809,74.815,WSQS points
+Groundwater,1212,75.449,75.510,75.483,75.481,WSQS points
+Surface water,234,76.365,76.137,76.101,76.026,WSQS points
+Tanker delivery,120,71.530,71.152,71.124,71.840,WSQS points
+Commercial water,225,72.299,72.272,72.094,72.482,WSQS points
+Municipal piped minus groundwater,,-0.602,-0.656,-0.674,-0.666,WSQS points
+Pooled out-of-fold RMSE,,16.095,15.850,15.762,15.913,WSQS points
+Piped-minus-groundwater working SE,,0.659,0.655,0.654,0.655,WSQS points
