@@ -1,6 +1,6 @@
 # Household Water Service Quality Standardization
 
-Research code and aggregate results accompanying *A Framework for Standardizing Household Water Service Quality Comparisons Across Primary Drinking-Water Provision Arrangements*, a manuscript prepared for *Water Resources Research*.
+Research code and aggregate results accompanying *Comparing Household Water Service Quality Across Primary Drinking-Water Sources Using Population Standardization*, a manuscript prepared for *Water Resources Research*.
 
 ## Study overview
 
